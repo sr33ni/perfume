@@ -1160,9 +1160,7 @@ td figure{
     border: 1px solid transparent;
     border-radius: 33.44rem;
     cursor: pointer;
-}
-header button{
-white-space: nowrap;
+    white-space: nowrap;
 }
 .accordion_list_one{
     color: var(--default-white);
