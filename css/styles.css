@@ -1331,6 +1331,14 @@ footer > section ul.footer-subscribe h6{
  footer > section ul.footer-subscribe input{
     width: calc(100% - 150px);
  }
+@media screen and (max-width:1080.68px) {
+    footer > section ul.footer-subscribe input{
+        width: 100%;
+    }
+  footer > section ul.footer-subscribe button{
+    margin-bottom: 10px;
+  }
+}
 footer > section ul.footer-subscribe p{
     font-family: 'Oxanium';
 }
