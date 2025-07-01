@@ -450,6 +450,11 @@ gap: 2rem;
     gap: 15.24px;
     align-items: center;
 }
+@media screen and (max-width:1080.98px) {
+  .check_list .cart-content-two{
+    flex-direction:column;
+  }
+}
 .content-two .content-two-sub{
     margin-top: 1.9375rem;
 }
