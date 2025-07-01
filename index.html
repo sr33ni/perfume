@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/">
+
+    <title> GTG Perfume website</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">GTG</div>
+        <button type="button" class="hamburger" id="hamburger">&#9776;</button>
+
+        <nav class="navmenu" id="navMenu">
+            <a href="#">Home</a>
+            <div class="dropdown">
+                <a href="#">Shop</a>
+                <div class="dropdown-menu">
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                </div>
+            </div>
+            <a href="#">Fragrances</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="header-right">
+            <button type="button" id="searchBtn" class="search-btn"><img src="./assets/fi_2811790.svg"
+                    alt="search icon" /></button>
+            <input type="text" id="searchText" class="search-text" placeholder="Search" style="display: none;" />
+            <button class="btn">Shop Now</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-one">
+            <article>
+                <p>Awarded the best perfume in the world</p>
+                <h3>Live your best life.</h3>
+                <div>
+                    <p>
+                        <span>10<sub>x</sub></span>
+                        <span>power</span>
+                    </p>
+                    <p>
+                        <span>9</span>
+                        <span>ingredients</span>
+                    </p>
+                    <p>
+                        <span>10<sub>x</sub></span>
+                        <span>happy </span>
+                    </p>
+                </div>
+                <button type="button"> Shop Now</button>
+            </article>
+        </section>
+        <section class="section-two">
+            <span>
+                <figure>
+                    <img src="./assets/Heart_green.svg" alt="30-day guarantee icon" loading="lazy" />
+                </figure>
+                30-day Guarantee
+            </span>
+            <span>
+                <figure>
+                    <img src="./assets/Globe_green.svg" alt="30-day guarantee icon" loading="lazy" />
+                </figure>
+                30-day Guarantee
+            </span>
+            <span>
+                <figure>
+                    <img src="./assets/Truck_green.svg" alt="30-day guarantee icon" loading="lazy" />
+                </figure>
+                30-day Guarantee
+            </span>
+            <span>
+                <figure>
+                    <img src="./assets/Plant_green.svg" alt="30-day guarantee icon" loading="lazy" />
+                </figure>
+                30-day Guarantee
+            </span>
+        </section>
+        <section class="section-three">
+            <article>
+                <h3>9 POWERFUL SCENTS</h3>
+                <h4>All of the Best Ingredients,<br> None of the Compromise</h4>
+                <p>GTG delivers 10x longer-lasting fragrance with our advanced concentration formula - engineered for
+                    all-day projection and exceptional sillage.</p>
+                <button type="button">View all fragrances</button>
+            </article>
+            <div class="image-container">
+                <img src="./assets/image_one.png" alt="collection of ingredients used in a perfume" loading="lazy" />
+            </div>
+        </section>
+        <section class="section-four">
+            <div class="content-one">
+                <section class="carousel" id="carousel-one">
+                    <div class="tab tab_one active">
+                        <img src="./assets/tab_image_one.png" loading="lazy" />
+                    </div>
+                    <div class="tab tab_two">
+                        <img src="./assets/tab_image_two.png" loading="lazy" />
+                    </div>
+                    <div class="tab tab_three">sample three</div>
+
+                    <div class="action-container">
+                        <a class="action action-preview" onclick="prev('carousel-one')"></a>
+                        <div class="dot-nav">
+                            <div class="dot active" onclick="goToTab('carousel-one', 0)"></div>
+                            <div class="dot" onclick="goToTab('carousel-one', 1)"></div>
+                            <div class="dot" onclick="goToTab('carousel-one', 2)"></div>
+                        </div>
+                        <a class="action action-next" onclick="next('carousel-one')"></a>
+                    </div>
+                </section>
+            </div>
+            <div class="content-two">
+                <div>
+                    <h3>GTG perfumes</h3>
+                    <figure>
+                        <img src="./assets/light-green-start (1).svg" alt="star icon" />
+                        <img src="./assets/light-green-start (1).svg" alt="star icon" />
+                        <img src="./assets/light-green-start (1).svg" alt="star icon" />
+                        <img src="./assets/light-green-start (1).svg" alt="star icon" />
+                        <img src="./assets/light-green-start (1).svg" alt="star icon" />
+                    </figure>
+                    <span>4.7 (999+ review)</span>
+                    <p>ssample</p>
+                    <div class="content-two-sub">
+                        <form>
+                            <h6>Most popular</h6>
+                            <details class="check_list" open>
+                                <summary><span>Single Subscription</span>
+                                    <p><span>$99.99</span><span>$99.99</span></p>
+                                </summary>
+                                <div class="cart-content">
+                                    <article>
+                                        <h6>Choose a Fragrance</h6>
+                                        <div class="content-mini-slide">
+                                            <a class="dot mini-slide" onclick="goToTab('carousel-one', 0)">
+                                                <span class="tag">
+                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
+                                                    <label for="fragrance-set-one">Original</label>
+                                                </span>
+                                                <span class="mini-slide_img">
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
+                                                            alt="A scenic mountain view" />
+                                                    </figure>
+                                                </span>
+                                            </a>
+                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',1)">
+                                                <span>
+                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
+                                                    <label for="fragrance-set-one">Original</label>
+                                                </span>
+                                                <span class="mini-slide_img">
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
+                                                            alt="A scenic mountain view" />
+                                                    </figure>
+                                                </span>
+                                            </a>
+                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',2)">
+                                                <span>
+                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
+                                                    <label for="fragrance-set-one">Original</label>
+                                                </span>
+                                                <span class="mini-slide_img">
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
+                                                            alt="A scenic mountain view" />
+                                                    </figure>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <h6>What’s Included:</h6>
+                                        <div class="cart-content-two">
+                                            <span>
+                                                <p>Every 30 Days</p>
+                                                <figure>
+                                                    <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
+                                                        alt="A scenic mountain view">
+                                                </figure>
+                                            </span>
+                                            <span>
+                                                <p>One Time <strong>(Free)</strong></p>
+                                                <div>
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
+                                                            alt="A scenic mountain view">
+
+                                                    </figure>
+                                                    <figure>
+
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
+                                                            alt="A scenic mountain view">
+
+                                                    </figure>
+                                                    <figure>
+
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
+                                                            alt="A scenic mountain view">
+                                                    </figure>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </article>
+                                    <ul class="image-list">
+                                        <li>Item one</li>
+                                        <li>Item two</li>
+                                        <li>Item three</li>
+                                    </ul>
+                                </div>
+                            </details>
+                            <details class="check_list">
+                                <summary><span>Double Subscription</span>
+                                    <p><span>$99.99</span><span>$99.99</span></p>
+                                </summary>
+                                <div class="cart-content">
+                                    <article>
+                                        <h6>Choose a Fragrance</h6>
+                                        <div class="content-mini-slide">
+                                            <a class="dot mini-slide" onclick="goToTab('carousel-one', 0)">
+                                                <span>
+                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
+                                                    <label for="fragrance-set-one">Original</label>
+                                                </span>
+                                                <span class="mini-slide_img">
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
+                                                            alt="A scenic mountain view" />
+                                                    </figure>
+                                                </span>
+                                            </a>
+                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',1)">
+                                                <span>
+                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
+                                                    <label for="fragrance-set-one">Original</label>
+                                                </span>
+                                                <span class="mini-slide_img">
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
+                                                            alt="A scenic mountain view" />
+                                                    </figure>
+                                                </span>
+                                            </a>
+                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',2)">
+                                                <span>
+                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
+                                                    <label for="fragrance-set-one">Original</label>
+                                                </span>
+                                                <span class="mini-slide_img">
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
+                                                            alt="A scenic mountain view" />
+                                                    </figure>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <h6>Choose a Fragrance</h6>
+                                        <div class="content-mini-slide">
+                                            <a class="dot mini-slide" onclick="goToTab('carousel-one', 0)">
+                                                <span>
+                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
+                                                    <label for="fragrance-set-one">Original</label>
+                                                </span>
+                                                <span class="mini-slide_img">
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
+                                                            alt="A scenic mountain view" />
+                                                    </figure>
+                                                </span>
+                                            </a>
+                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',1)">
+                                                <span>
+                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
+                                                    <label for="fragrance-set-one">Original</label>
+                                                </span>
+                                                <span class="mini-slide_img">
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
+                                                            alt="A scenic mountain view" />
+                                                    </figure>
+                                                </span>
+                                            </a>
+                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',2)">
+                                                <span>
+                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
+                                                    <label for="fragrance-set-one">Original</label>
+                                                </span>
+                                                <span class="mini-slide_img">
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
+                                                            alt="A scenic mountain view" />
+                                                    </figure>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <h6>What’s Included:</h6>
+                                        <div class="cart-content-two">
+                                            <span>
+                                                <p>Every 30 Days</p>
+                                                <figure>
+                                                    <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
+                                                        alt="A scenic mountain view">
+                                                </figure>
+                                            </span>
+                                            <span>
+                                                <p>One Time <strong>(Free)</strong></p>
+                                                <div>
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
+                                                            alt="A scenic mountain view">
+
+                                                    </figure>
+                                                    <figure>
+
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
+                                                            alt="A scenic mountain view">
+
+                                                    </figure>
+                                                    <figure>
+
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
+                                                            alt="A scenic mountain view">
+                                                    </figure>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </article>
+                                    <ul class="image-list">
+                                        <li>Item one</li>
+                                        <li>Item two</li>
+                                        <li>Item three</li>
+                                    </ul>
+                                </div>
+                            </details>
+                            <details class="check_list">
+                                <summary><span>Try Once</span>
+                                    <p><span>$99.99</span><span>$99.99</span></p>
+                                </summary>
+                                <div class="cart-content">
+                                    <article>
+                                        <h6>Choose a Fragrance</h6>
+                                        <div class="content-mini-slide">
+                                            <a class="dot mini-slide" onclick="goToTab('carousel-one', 0)">
+                                                <span>
+                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
+                                                    <label for="fragrance-set-one">Original</label>
+                                                </span>
+                                                <span class="mini-slide_img">
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
+                                                            alt="A scenic mountain view" />
+                                                    </figure>
+                                                </span>
+                                            </a>
+                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',1)">
+                                                <span>
+                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
+                                                    <label for="fragrance-set-one">Original</label>
+                                                </span>
+                                                <span class="mini-slide_img">
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
+                                                            alt="A scenic mountain view" />
+                                                    </figure>
+                                                </span>
+                                            </a>
+                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',2)">
+                                                <span>
+                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
+                                                    <label for="fragrance-set-one">Original</label>
+                                                </span>
+                                                <span class="mini-slide_img">
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
+                                                            alt="A scenic mountain view" />
+                                                    </figure>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <h6>What’s Included:</h6>
+                                        <div class="cart-content-two">
+                                            <span>
+                                                <p>Every 30 Days</p>
+                                                <figure>
+                                                    <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
+                                                        alt="A scenic mountain view">
+                                                </figure>
+                                            </span>
+                                            <span>
+                                                <p>One Time <strong>(Free)</strong></p>
+                                                <div>
+                                                    <figure>
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
+                                                            alt="A scenic mountain view">
+
+                                                    </figure>
+                                                    <figure>
+
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
+                                                            alt="A scenic mountain view">
+
+                                                    </figure>
+                                                    <figure>
+
+                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
+                                                            alt="A scenic mountain view">
+                                                    </figure>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </article>
+                                    <ul class="image-list">
+                                        <li>Item one</li>
+                                        <li>Item two</li>
+                                        <li>Item three</li>
+                                    </ul>
+                                </div>
+                            </details>
+                            <button type="button">add to cart</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-five">
+            <figure>
+                <img src="./assets/image_two.png" alt="vintage perfume bottle">
+            </figure>
+            <article>
+                <h3>The Ultimate Frgrance</h3>
+                <p>GTG SECIAL EDITION</p>
+                <div class="info-details">
+                    <p>
+                        <span>Lorem ipsum </span>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris
+                        </span>
+                    </p>
+
+                    <p>
+                        <span>Lorem ipsum </span>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris
+                        </span>
+                    </p>
+
+                    <p>
+                        <span>Lorem ipsum </span>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris
+                        </span>
+                    </p>
+                    <p>
+                        <span>Lorem ipsum </span>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris
+                        </span>
+                    </p>
+
+                </div>
+                <button type="button">Try Velvet Whisper Today</button>
+            </article>
+        </section>
+        <section class="section-six">
+            <div class="banner-card">
+                <p>SUBSCRIPTION</p>
+                <h2>
+                    Subscribe & save <strong>20%</strong> on <br> every perfume
+                </h2>
+                <div class="pill-pack">
+                    <p><span>Lorem Ipsum</span></p>
+                    <p><span>Lorem Ipsum</span></p>
+                    <p><span>Lorem Ipsum</span></p>
+                    <p><span>Lorem Ipsum</span></p>
+                    <p><span>Lorem Ipsum</span></p>
+                    <p><span>Lorem Ipsum</span></p>
+                </div>
+                <button type="button">Subscribe Now</button>
+            </div>
+        </section>
+        <section class="section-seven">
+            <div>
+                <h3>Our Collection</h3>
+                <section class="list">
+                    <details class="accordion_list" open>
+                        <summary>Signature Scents</summary>
+                        <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+                    </details>
+                    <details class="accordion_list">
+                        <summary>Signature Scents</summary>
+                        <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+                    </details>
+                    <details class="accordion_list">
+                        <summary>Signature Scents</summary>
+                        <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+                    </details>
+                    <details class="accordion_list">
+                        <summary>Signature Scents</summary>
+                        <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+                    </details>
+                </section>
+            </div>
+            <div>
+                <section class="carousel" id="carousel-two">
+                    <div class="tab tab_one active">
+                        <img src="./assets/carousel_img.png" loading="lazy" />
+                    </div>
+                    <div class="tab tab_two">
+                        <img src="./assets/carousel_img.png" loading="lazy" />
+                    </div>
+                    <div class="tab tab_three"><img src="./assets/carousel_img.png" loading="lazy" /></div>
+
+                    <div class="action-container">
+                        <a class="action action-preview" onclick="prev('carousel-two')"></a>
+                        <div class="dot-nav">
+                            <div class="dot active" onclick="goToTab('carousel-two', 0)"></div>
+                            <div class="dot" onclick="goToTab('carousel-two', 1)"></div>
+                            <div class="dot" onclick="goToTab('carousel-two', 2)"></div>
+                        </div>
+                        <a class="action action-next" onclick="next('carousel-two')"></a>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="section-eight">
+            <div id="progress-section">
+                <p>
+                    <span class="progress-value" data-target="83">83%</span>
+                    <span>sample</span>
+                </p>
+                <p>
+                    <span class="progress-value" data-target="43">83%</span>
+                    <span>sample</span>
+                </p>
+                <p>
+                    <span class="progress-value" data-target="93">83%</span>
+                    <span>sample</span>
+                </p>
+                <p>
+                    <span class="progress-value" data-target="23">83%</span>
+                    <span>sample</span>
+                </p>
+            </div>
+        </section>
+        <section class="section-nine">
+            <figure><img src="./assets/---.svg" alt="breaker" /></figure>
+            <h2>Why GTG is the #1 Choice</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">Qualities</th>
+                            <th>
+                                <div class="img_tag">
+                                    <figure>
+                                        <img src="./assets/table_img-one.png" />
+                                    </figure>
+                                    <span> sampel</span>
+                                </div>
+
+                            </th>
+                            <th>
+                                <div class="img_tag">
+                                    <figure>
+                                        <img src="./assets/table_img-two.png" />
+                                    </figure>
+                                    <span> sampel</span>
+                                </div>
+
+                            </th>
+                            <th>sample</th>
+                            <th>sample</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">Potency Concentration</td>
+                            <td>
+                                <figure><img src="./assets/check-icon.svg" alt="check icon" /></figure>
+                            </td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Longevity</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Sillage</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3">Bottle Design Score</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Blend and Harmony</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Skin Compatibility</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Scent Profile</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Price vs. Quality</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                            <td>sample</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button">Try It Risk-Free</button>
+            </div>
+        </section>
+        <section class="section-ten">
+            <figure>
+                <img src="./assets/banner_image_three.png" alt="" />
+            </figure>
+            <div>
+                <article>
+                    <h3>From the Founder</h3>
+                    <button type="button">About us</button>
+                </article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Consectetur adipiscing elit, sed do eiusmod </p>
+            </div>
+        </section>
+        <section class="section-eleven" id="carousel-three">
+            <h3>What our customers are saying</h3>
+            <p>Real people, real reviews.</p>
+            <div class="float-nav">
+                <a class="action action-preview" onclick="prev('carousel-three')"></a>
+                <a class="action action-next" onclick="next('carousel-three')"></a>
+            </div>
+            <div class="carousel" id="carousel-three">
+                <div class="tab tab_one active">
+                    <div class="slider-section">
+                        <article>
+                            <span class="d-inline-block"><i class="star"></i> <i class="star"></i></span>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                            <div class="sub-section">
+                                <figure>
+                                    <img src="./assets/Avatar-Image.png" />
+                                </figure>
+                                <p>
+                                    <span>Name Surname</span>
+                                    <span>Position, Company name</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <span class="d-inline-block"><i class="star"></i> <i class="star"></i> <i
+                                    class="star"></i></span>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                            <div class="sub-section">
+                                <figure>
+                                    <img src="./assets/Avatar-Image.png" />
+                                </figure>
+                                <p>
+                                    <span>Name Surname</span>
+                                    <span>Position, Company name</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <span class="d-inline-block"><i class="star"></i> <i class="star"></i> <i
+                                    class="star"></i></span>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                            <div class="sub-section">
+                                <figure>
+                                    <img src="./assets/Avatar-Image.png" />
+                                </figure>
+                                <p>
+                                    <span>Name Surname</span>
+                                    <span>Position, Company name</span>
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+                <div class="tab tab_two ">
+                    <div class="slider-section">
+                        <article>
+                            <span class="d-inline-block"><i class="star"></i> <i class="star"></i> <i
+                                    class="star"></i></span>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                            <div class="sub-section">
+                                <figure>
+                                    <img src="./assets/Avatar-Image.png" />
+                                </figure>
+                                <p>
+                                    <span>Name Surname</span>
+                                    <span>Position, Company name</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <span class="d-inline-block"><i class="star"></i> <i class="star"></i> <i
+                                    class="star"></i></span>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                            <div class="sub-section">
+                                <figure>
+                                    <img src="./assets/Avatar-Image.png" />
+                                </figure>
+                                <p>
+                                    <span>Name Surname</span>
+                                    <span>Position, Company name</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <span class="d-inline-block"><i class="star"></i> <i class="star"></i> <i
+                                    class="star"></i></span>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                            <div class="sub-section">
+                                <figure>
+                                    <img src="./assets/Avatar-Image.png" />
+                                </figure>
+                                <p>
+                                    <span>Name Surname</span>
+                                    <span>Position, Company name</span>
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="action-container">
+
+                <div class="dot-nav">
+                    <div class="dot active" onclick="goToTab('carousel-three', 0)"></div>
+                    <div class="dot" onclick="goToTab('carousel-three', 1)"></div>
+                    <div class="dot" onclick="goToTab('carousel-three', 2)"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section-twelve">
+            <article>
+                <h2>FAQs</h2>
+                <p>
+                    If you have any question that isn’t answered in our FAQs, we’d love to hear from you!
+                </p>
+                <button type="button">Get in touch</button>
+            </article>
+            <div>
+                <details class="accordion_list_one" open>
+                    <summary>Signature Scents</summary>
+                    <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+                </details>
+                <details class="accordion_list_one">
+                    <summary>Signature Scents</summary>
+                    <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+                </details>
+                <details class="accordion_list_one">
+                    <summary>Signature Scents</summary>
+                    <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+                </details>
+                <details class="accordion_list_one">
+                    <summary>Signature Scents</summary>
+                    <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+                </details>
+
+                <a>See All FAQ’s</a>
+            </div>
+        </section>
+        <section class="section-last">
+            <div class="banner_image_sub">
+                <div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem</p>
+                    <input type="text" placeholder="Email" />
+                    <button type="button">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h3>GTG</h3>
+            <section>
+                <ul>
+                    <li>
+                        <a>Home</a>
+                        <a>Shop</a>
+                        <a>Fragrance</a>
+                    </li>
+                    <li>
+                        <a>About Us</a>
+                        <a>Blog</a>
+                        <a>Contact</a>
+                    </li>
+                    <li>
+                        <a><i><img src="./assets/Facebook.svg" /></i><span>Facebook</span></a>
+                        <a><i><img src="./assets/Instagram.svg" /></i><span>Instagram</span></a>
+                        <a><i><img src="./assets/X.svg" /></i><span>X</span></a>
+                    </li>
+                </ul>
+                <ul class="footer-subscribe">
+                    <li>
+                        <h6>Join our newsletter to stay up to date on features and releases.</h6>
+                        <div>
+                            <input type="text" placeholder="Enter your email" id="subscribe_id"
+                                name="subscribe_input" />
+                            <button type="button">Subscribe</button>
+                        </div>
+                        <p>By subscribing you agree to with our Privacy Policy and provide consent to receive updates
+                            from our company.</p>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
