@@ -901,6 +901,7 @@ gap: 2rem;
 .table-container{
     width: 100%;
     text-align: center;
+  overflow:auto;
 }
 .table-container table{
     width: 100%;
@@ -1159,6 +1160,9 @@ td figure{
     border: 1px solid transparent;
     border-radius: 33.44rem;
     cursor: pointer;
+}
+header button{
+white-space: nowrap;
 }
 .accordion_list_one{
     color: var(--default-white);
