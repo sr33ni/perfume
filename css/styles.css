@@ -1245,6 +1245,11 @@ footer{
     color: var(--default-white);
     padding: 4.7rem 5.0625rem 5.8125rem 5.0625rem;
 }
+@media screen and (max-width:1080.98px) {
+        .footer{
+        padding-inline: 2rem;
+    }
+}
 footer > section{
     display: flex;
     justify-content: space-between;
