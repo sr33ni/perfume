@@ -1,3 +1,20 @@
+const boxes = document.querySelectorAll('.box-to-observe-top, .box-to-observe-bottom');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active'); 
+    } else {
+      entry.target.classList.remove('active');
+    }
+  });
+}, {
+  root: null,
+  rootMargin: "0px 0px 20px 0px",
+  threshold: 0
+});
+
+boxes.forEach(box => observer.observe(box));
 
 function next(id) {
   const carousel = document.getElementById(id);
@@ -70,16 +87,6 @@ function changeTab(carousel, index) {
   });
 }
 
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      animatePercentages('#' + entry.target.id + ' .progress-value');
-      observer.unobserve(entry.target); 
-    }
-  });
-}, {
-  threshold: 0.5
-});
 const progressSection = document.querySelector('#progress-section');
 if (progressSection) {
   observer.observe(progressSection);

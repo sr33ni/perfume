@@ -190,7 +190,9 @@ header {
     margin: auto;
 }
 .section-one>article>p{
-    font-size: var(--font-size-72px)
+    font-size: var(--font-size-72px);
+    font-family: "Tan Twinkle";
+    color: var(--primary-green-color);
 }
 /* .section-one>article>p {
     background: var(--linear-gradient-four);
@@ -1835,4 +1837,24 @@ body.menu-open {
         color: var(--primary-green-color);
     }
 
+}
+.box-to-observe-top {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.box-to-observe-top.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.box-to-observe-bottom {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 0.6s ease-out;
+}
+
+.box-to-observe-bottom.active {
+  opacity: 1;
+  transform: translateY(0);
 }
