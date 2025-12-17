@@ -318,6 +318,8 @@ header {
 
 .section-three>.image-container {
     max-width: 40vw;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .section-three>article>h3 {
@@ -1841,7 +1843,7 @@ body.menu-open {
 .box-to-observe-top {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.6s ease-out;
+  transition: all 1s ease-out;
 }
 
 .box-to-observe-top.active {
@@ -1851,7 +1853,7 @@ body.menu-open {
 .box-to-observe-bottom {
   opacity: 0;
   transform: translateY(-30px);
-  transition: all 0.6s ease-out;
+  transition: all 1s ease-out;
 }
 
 .box-to-observe-bottom.active {
