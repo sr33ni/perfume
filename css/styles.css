@@ -84,6 +84,8 @@ body {
     scrollbar-track-color: #b8c0c8;
     font-size: 16px;
     line-height: normal;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -314,6 +316,7 @@ header {
     padding-inline: 4rem;
     padding-block: 2.5rem;
     align-items: center;
+    gap: 10vw;
 }
 
 .section-three>.image-container {
@@ -1859,4 +1862,13 @@ body.menu-open {
 .box-to-observe-bottom.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+.video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+:is(.gsap-marker-scroller-end,.gsap-marker-end,.gsap-marker-scroller-end,.gsap-marker-scroller-start,.gsap-marker-start){
+    visibility:  hidden !important;
 }

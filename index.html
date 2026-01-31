@@ -9,6 +9,8 @@
     <title>cocodemer</title>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
+      <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -70,6 +72,13 @@
                 30-day Guarantee
             </span>
         </section>
+        <div>
+                    <video class="video" playsinline="true" webkit-playsinline="true" preload="auto" muted="muted">
+            <source src="https://www.dropbox.com/scl/fi/qejf5dgqiv6m77d71r2ec/abstract-background-ink-water.mp4?rlkey=cf5xf73grwr5olszcyjghc5pt&st=ycgfiqec&raw=1" type="video/mp4" />
+        </video>
+        </div>
+
+
         <section class="section-three">
             <article>
                 <h3>9 POWERFUL SCENTS</h3>
@@ -82,347 +91,6 @@
                 <img src="./assets/shadowbottle.png" alt="collection of ingredients used in a perfume" loading="lazy" />
             </div>
         </section>
-        <!-- <section class="section-four">
-            <div class="content-one">
-                <section class="carousel" id="carousel-one">
-                    <div class="tab tab_one active">
-                        <img src="./assets/tab_image_one.png" loading="lazy" />
-                    </div>
-                    <div class="tab tab_two">
-                        <img src="./assets/tab_image_two.png" loading="lazy" />
-                    </div>
-                    <div class="tab tab_three">sample three</div>
-
-                    <div class="action-container">
-                        <a class="action action-preview" onclick="prev('carousel-one')"></a>
-                        <div class="dot-nav">
-                            <div class="dot active" onclick="goToTab('carousel-one', 0)"></div>
-                            <div class="dot" onclick="goToTab('carousel-one', 1)"></div>
-                            <div class="dot" onclick="goToTab('carousel-one', 2)"></div>
-                        </div>
-                        <a class="action action-next" onclick="next('carousel-one')"></a>
-                    </div>
-                </section>
-            </div>
-            <div class="content-two">
-                <div>
-                    <h3>GTG perfumes</h3>
-                    <figure>
-                        <img src="./assets/light-green-start (1).svg" alt="star icon" />
-                        <img src="./assets/light-green-start (1).svg" alt="star icon" />
-                        <img src="./assets/light-green-start (1).svg" alt="star icon" />
-                        <img src="./assets/light-green-start (1).svg" alt="star icon" />
-                        <img src="./assets/light-green-start (1).svg" alt="star icon" />
-                    </figure>
-                    <span>4.7 (999+ review)</span>
-                    <p>ssample</p>
-                    <div class="content-two-sub">
-                        <form>
-                            <h6>Most popular</h6>
-                            <details class="check_list" open>
-                                <summary><span>Single Subscription</span>
-                                    <p><span>$99.99</span><span>$99.99</span></p>
-                                </summary>
-                                <div class="cart-content">
-                                    <article>
-                                        <h6>Choose a Fragrance</h6>
-                                        <div class="content-mini-slide">
-                                            <a class="dot mini-slide" onclick="goToTab('carousel-one', 0)">
-                                                <span class="tag">
-                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
-                                                    <label for="fragrance-set-one">Original</label>
-                                                </span>
-                                                <span class="mini-slide_img">
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
-                                                            alt="A scenic mountain view" />
-                                                    </figure>
-                                                </span>
-                                            </a>
-                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',1)">
-                                                <span>
-                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
-                                                    <label for="fragrance-set-one">Original</label>
-                                                </span>
-                                                <span class="mini-slide_img">
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
-                                                            alt="A scenic mountain view" />
-                                                    </figure>
-                                                </span>
-                                            </a>
-                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',2)">
-                                                <span>
-                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
-                                                    <label for="fragrance-set-one">Original</label>
-                                                </span>
-                                                <span class="mini-slide_img">
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
-                                                            alt="A scenic mountain view" />
-                                                    </figure>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <h6>What’s Included:</h6>
-                                        <div class="cart-content-two">
-                                            <span>
-                                                <p>Every 30 Days</p>
-                                                <figure>
-                                                    <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
-                                                        alt="A scenic mountain view">
-                                                </figure>
-                                            </span>
-                                            <span>
-                                                <p>One Time <strong>(Free)</strong></p>
-                                                <div>
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
-                                                            alt="A scenic mountain view">
-
-                                                    </figure>
-                                                    <figure>
-
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
-                                                            alt="A scenic mountain view">
-
-                                                    </figure>
-                                                    <figure>
-
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
-                                                            alt="A scenic mountain view">
-                                                    </figure>
-                                                </div>
-                                            </span>
-                                        </div>
-                                    </article>
-                                    <ul class="image-list">
-                                        <li>Item one</li>
-                                        <li>Item two</li>
-                                        <li>Item three</li>
-                                    </ul>
-                                </div>
-                            </details>
-                            <details class="check_list">
-                                <summary><span>Double Subscription</span>
-                                    <p><span>$99.99</span><span>$99.99</span></p>
-                                </summary>
-                                <div class="cart-content">
-                                    <article>
-                                        <h6>Choose a Fragrance</h6>
-                                        <div class="content-mini-slide">
-                                            <a class="dot mini-slide" onclick="goToTab('carousel-one', 0)">
-                                                <span>
-                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
-                                                    <label for="fragrance-set-one">Original</label>
-                                                </span>
-                                                <span class="mini-slide_img">
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
-                                                            alt="A scenic mountain view" />
-                                                    </figure>
-                                                </span>
-                                            </a>
-                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',1)">
-                                                <span>
-                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
-                                                    <label for="fragrance-set-one">Original</label>
-                                                </span>
-                                                <span class="mini-slide_img">
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
-                                                            alt="A scenic mountain view" />
-                                                    </figure>
-                                                </span>
-                                            </a>
-                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',2)">
-                                                <span>
-                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
-                                                    <label for="fragrance-set-one">Original</label>
-                                                </span>
-                                                <span class="mini-slide_img">
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
-                                                            alt="A scenic mountain view" />
-                                                    </figure>
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <h6>Choose a Fragrance</h6>
-                                        <div class="content-mini-slide">
-                                            <a class="dot mini-slide" onclick="goToTab('carousel-one', 0)">
-                                                <span>
-                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
-                                                    <label for="fragrance-set-one">Original</label>
-                                                </span>
-                                                <span class="mini-slide_img">
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
-                                                            alt="A scenic mountain view" />
-                                                    </figure>
-                                                </span>
-                                            </a>
-                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',1)">
-                                                <span>
-                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
-                                                    <label for="fragrance-set-one">Original</label>
-                                                </span>
-                                                <span class="mini-slide_img">
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
-                                                            alt="A scenic mountain view" />
-                                                    </figure>
-                                                </span>
-                                            </a>
-                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',2)">
-                                                <span>
-                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
-                                                    <label for="fragrance-set-one">Original</label>
-                                                </span>
-                                                <span class="mini-slide_img">
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
-                                                            alt="A scenic mountain view" />
-                                                    </figure>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <h6>What’s Included:</h6>
-                                        <div class="cart-content-two">
-                                            <span>
-                                                <p>Every 30 Days</p>
-                                                <figure>
-                                                    <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
-                                                        alt="A scenic mountain view">
-                                                </figure>
-                                            </span>
-                                            <span>
-                                                <p>One Time <strong>(Free)</strong></p>
-                                                <div>
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
-                                                            alt="A scenic mountain view">
-
-                                                    </figure>
-                                                    <figure>
-
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
-                                                            alt="A scenic mountain view">
-
-                                                    </figure>
-                                                    <figure>
-
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
-                                                            alt="A scenic mountain view">
-                                                    </figure>
-                                                </div>
-                                            </span>
-                                        </div>
-                                    </article>
-                                    <ul class="image-list">
-                                        <li>Item one</li>
-                                        <li>Item two</li>
-                                        <li>Item three</li>
-                                    </ul>
-                                </div>
-                            </details>
-                            <details class="check_list">
-                                <summary><span>Try Once</span>
-                                    <p><span>$99.99</span><span>$99.99</span></p>
-                                </summary>
-                                <div class="cart-content">
-                                    <article>
-                                        <h6>Choose a Fragrance</h6>
-                                        <div class="content-mini-slide">
-                                            <a class="dot mini-slide" onclick="goToTab('carousel-one', 0)">
-                                                <span>
-                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
-                                                    <label for="fragrance-set-one">Original</label>
-                                                </span>
-                                                <span class="mini-slide_img">
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
-                                                            alt="A scenic mountain view" />
-                                                    </figure>
-                                                </span>
-                                            </a>
-                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',1)">
-                                                <span>
-                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
-                                                    <label for="fragrance-set-one">Original</label>
-                                                </span>
-                                                <span class="mini-slide_img">
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
-                                                            alt="A scenic mountain view" />
-                                                    </figure>
-                                                </span>
-                                            </a>
-                                            <a class="dot mini-slide" onclick="goToTab('carousel-one',2)">
-                                                <span>
-                                                    <input type="radio" name="fragrance-set-one" id="fragrance-set-one">
-                                                    <label for="fragrance-set-one">Original</label>
-                                                </span>
-                                                <span class="mini-slide_img">
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (5).png"
-                                                            alt="A scenic mountain view" />
-                                                    </figure>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <h6>What’s Included:</h6>
-                                        <div class="cart-content-two">
-                                            <span>
-                                                <p>Every 30 Days</p>
-                                                <figure>
-                                                    <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
-                                                        alt="A scenic mountain view">
-                                                </figure>
-                                            </span>
-                                            <span>
-                                                <p>One Time <strong>(Free)</strong></p>
-                                                <div>
-                                                    <figure>
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
-                                                            alt="A scenic mountain view">
-
-                                                    </figure>
-                                                    <figure>
-
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
-                                                            alt="A scenic mountain view">
-
-                                                    </figure>
-                                                    <figure>
-
-                                                        <img src="./assets/Image_fx (14)-Photoroom 1 (1).png"
-                                                            alt="A scenic mountain view">
-                                                    </figure>
-                                                </div>
-                                            </span>
-                                        </div>
-                                    </article>
-                                    <ul class="image-list">
-                                        <li>Item one</li>
-                                        <li>Item two</li>
-                                        <li>Item three</li>
-                                    </ul>
-                                </div>
-                            </details>
-                            <button type="button">add to cart</button>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-        </section> -->
         <section class="section-five">
             <figure>
                 <img src="./assets/image_two.png" alt="vintage perfume bottle">
@@ -855,36 +523,36 @@
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-<!-- <script>
-  (function(){
-    emailjs.init("PUBLIC_KEY");
-  })();
-</script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
 
-<input type="email" id="email" placeholder="Enter email" />
-<button onclick="subscribe()">Subscribe</button>
+const coolVideo = document.querySelector("video");
 
-<script>
-function subscribe() {
-  const email = document.getElementById("email").value;
-
-  if (!email) {
-    alert("Enter email");
-    return;
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "video",
+    start: "top-=40% top",
+    end: "bottom+=80% bottom",
+    scrub: 2,
+    markers: true
   }
-
-  emailjs.send("SERVICE_ID", "TEMPLATE_ID", {
-    user_email: email,
-  })
-  .then(() => {
-    alert("Email sent successfully!");
-  })
-  .catch((error) => {
-    alert("Error sending email");
-    console.log(error);
-  });
+});
+coolVideo.onloadedmetadata = function () {
+  tl.to(coolVideo, { currentTime: coolVideo.duration });
+};
+function isTouchDevice() {
+  return (
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0
+  );
 }
-</script> -->
+if (isTouchDevice()) {
+  coolVideo.play();
+  coolVideo.pause();
+}
+
+    </script>
 </body>
 
 </html>
