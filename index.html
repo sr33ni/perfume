@@ -7,7 +7,6 @@
     <link rel="icon" type="image/svg+xml" href="/assets/">
 
     <title>cocodemer</title>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
       <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
   <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
@@ -73,7 +72,7 @@
             </span>
         </section>
         <div>
-                    <video class="video" playsinline="true" webkit-playsinline="true" preload="auto" muted="muted">
+                    <video class="video" playsinline="true" webkit-playsinline="true" preload="metadata" muted="muted">
             <source src="https://www.dropbox.com/scl/fi/qejf5dgqiv6m77d71r2ec/abstract-background-ink-water.mp4?rlkey=cf5xf73grwr5olszcyjghc5pt&st=ycgfiqec&raw=1" type="video/mp4" />
         </video>
         </div>
@@ -521,38 +520,6 @@
         </footer>
     </main>
     <script src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
-
-const coolVideo = document.querySelector("video");
-
-let tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: "video",
-    start: "top-=40% top",
-    end: "bottom+=80% bottom",
-    scrub: 2,
-    markers: true
-  }
-});
-coolVideo.onloadedmetadata = function () {
-  tl.to(coolVideo, { currentTime: coolVideo.duration });
-};
-function isTouchDevice() {
-  return (
-    "ontouchstart" in window ||
-    navigator.maxTouchPoints > 0 ||
-    navigator.msMaxTouchPoints > 0
-  );
-}
-if (isTouchDevice()) {
-  coolVideo.play();
-  coolVideo.pause();
-}
-
-    </script>
 </body>
 
 </html>
